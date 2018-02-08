@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean name="custHibernateRepoBean"
+		class="com.sperian.repository.HibernateCustomerRepositoryImpl"></bean>
+
+	<bean name="custServiceBean" 
+		class="com.sperian.service.CustomerServiceImpl"
+		autowire="byType">
+	
+		<constructor-arg index="0"
+			type="com.sperian.repository.CustomerRepository"
+			ref="custServiceBean"></constructor-arg>	
+		
+	</bean>
+		
+</beans>

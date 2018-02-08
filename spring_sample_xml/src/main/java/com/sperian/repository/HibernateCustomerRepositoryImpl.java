@@ -12,9 +12,14 @@ public class HibernateCustomerRepositoryImpl implements CustomerRepository {
 		List<Customer> customers = new ArrayList<Customer>();
 		
 		Customer customer = new Customer();
-		customer.setFirstName("Lebron - appContext");
-		customer.setLastName("James - appContext");
+		customer.setFirstName("Lebron");
+		customer.setLastName("James");
 		customers.add(customer);
+
+		Customer customer2 = new Customer();
+		customer2.setFirstName("Stephen");
+		customer2.setLastName("Curry");
+		customers.add(customer2);
 		
 		return customers;
 	}

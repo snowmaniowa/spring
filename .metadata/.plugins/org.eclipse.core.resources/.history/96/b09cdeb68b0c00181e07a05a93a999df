@@ -1,0 +1,19 @@
+package com.sperian;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.sperian.service.CustomerService;
+
+public class Application {
+
+	public static void main(String[] args) {
+
+		String configLocation = "santhaApplicationContext.xml";
+		ApplicationContext applicationContext = new ClassPathXmlApplicationContext(configLocation);
+		
+		CustomerService service;
+		
+	}
+
+}

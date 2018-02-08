@@ -1,0 +1,21 @@
+package com.sperian;
+
+import java.util.List;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.sperian.model.Customer;
+import com.sperian.service.CustomerService;
+
+public class Application2 {
+
+	public static void main(String[] args) {
+
+		String configLocation = "santhaApplicationContext2.xml";
+		ApplicationContext context = new ClassPathXmlApplicationContext(configLocation);
+		
+		context.getBean(arg0);
+	}
+
+}
