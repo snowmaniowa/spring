@@ -10,6 +10,13 @@ public class CustomerServiceImpl implements CustomerService {
 
 	private CustomerRepository customerRepository;
 	
+	public CustomerServiceImpl(){		
+	}
+	
+	public CustomerServiceImpl(CustomerRepository repository){
+		this.customerRepository = repository;
+	}
+	
 	public List<Customer> findAll(){
 		return customerRepository.findAll();	
 	}
