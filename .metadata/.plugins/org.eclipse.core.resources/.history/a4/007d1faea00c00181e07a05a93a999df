@@ -1,0 +1,14 @@
+package com.sperian.repository;
+
+import java.util.List;
+
+import org.springframework.stereotype.Repository;
+
+import com.sperian.model.Customer;
+
+@Repository
+public interface CustomerRepository {
+
+	List<Customer> findAll();
+
+}

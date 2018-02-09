@@ -5,10 +5,10 @@
 
 	<!-- All objects defined here are called SPRING BEANS -->
 	<bean name="customerRepoBean"
-			class="com.sperian.repository.HibernateCustomerRepositoryImpl"></bean>
+			class="com.sperian.xml.repository.HibernateCustomerRepositoryImpl"></bean>
 			
 	<bean name="customerServiceBean"
-			class="com.sperian.service.CustomerServiceImpl"
+			class="com.sperian.xml.service.CustomerServiceImpl"
 			autowire="byType">
 		
 		<!--  setter injection -->

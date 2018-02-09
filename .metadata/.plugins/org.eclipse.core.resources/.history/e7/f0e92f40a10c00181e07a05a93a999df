@@ -1,0 +1,21 @@
+package com.sperian;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.sperian.service.CustomerService;
+import com.sperian.service.CustomerServiceImpl;
+
+public class ApplicationAnno {
+
+	public static void main(String[] args) {
+
+		String configLocation = "santhaApplicationContextXMLAnno.xml";
+		ApplicationContext context = new ClassPathXmlApplicationContext(configLocation);
+		
+		CustomerService customerService = new CustomerServiceImpl();
+		
+		System.out.println(customerService.findAll().get(0).getFirstName());
+	}
+
+}

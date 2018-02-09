@@ -1,0 +1,27 @@
+package com.sperian.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.sperian.model.Customer;
+
+public class HibernateCustomerRepositoryImpl implements CustomerRepository {
+
+	public List<Customer> findAll(){
+		
+		List<Customer> customers = new ArrayList<Customer>();
+		
+		Customer customer = new Customer();
+		customer.setFirstName("Lebron - XML config");
+		customer.setLastName("James - XML config");
+		customers.add(customer);
+
+		Customer customer2 = new Customer();
+		customer2.setFirstName("Stephen - XML config");
+		customer2.setLastName("Curry - XML config");
+		customers.add(customer2);
+		
+		return customers;
+	}
+	
+}

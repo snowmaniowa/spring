@@ -3,3 +3,7 @@
 1518067303959	Delete element
 1518067316243	Delete element
 1518067574260	Rename type 'Application'
+1518075154361	Rename package 'com.sperian.repository'
+1518075166106	Rename package 'com.sperian.service'
+1518075182622	Rename package 'com.sperian'
+1518075206171	Rename package 'com.sperian.model'

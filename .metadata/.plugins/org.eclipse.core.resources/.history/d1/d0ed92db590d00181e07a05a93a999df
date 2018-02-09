@@ -1,0 +1,17 @@
+package com.sperian;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.sperian.repository.CustomerRepository;
+import com.sperian.repository.HibernateCustomerRepositoryImpl;
+
+@Configuration
+public class AppConfig {
+	
+	@Bean(name = "customerRepository")
+	public CustomerRepository getCustomerRepository(){
+		return new HibernateCustomerRepositoryImpl();
+	}
+
+}
